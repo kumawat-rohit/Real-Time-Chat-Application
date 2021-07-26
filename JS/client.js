@@ -4,8 +4,8 @@ const form = document.getElementById('send-container');
 const messageInput = document.getElementById('messageInp');
 const messageContainer = document.querySelector(".container");
 
-var audio1 = new Audio('notification.mp3');
-var audio2 = new Audio('leave.mp3');
+var audio1 = new Audio('../Sounds/notification.mp3');
+var audio2 = new Audio('../Sounds/leave.mp3');
 
 
 const append = (message, position) => {
@@ -20,7 +20,7 @@ const append = (message, position) => {
     }
 }
 
-// const username = prompt("Enter Your Name to Join Chat");
+const username = prompt("Enter Your Name to Join Chat");
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
